@@ -1,6 +1,5 @@
-db.sqlite3
+﻿db.sqlite3
 __pycache__
 db - 副本.sqlite3
 env
 settings.py
-.vscode
