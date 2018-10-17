@@ -3,3 +3,4 @@ __pycache__
 db - 副本.sqlite3
 env
 settings.py
+.vscode
