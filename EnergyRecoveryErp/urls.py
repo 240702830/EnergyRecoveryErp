@@ -26,7 +26,7 @@ urlpatterns = [
             'authentication_form': app.forms.BootstrapAuthenticationForm,
             'extra_context':
             {
-                'title': 'Log in',
+                'title': '登录',
                 'year': datetime.now().year,
             }
         },
