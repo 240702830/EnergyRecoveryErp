@@ -38,6 +38,18 @@ urlpatterns = [
         },
         name='logout'),
 
+    url(r'^lay$',
+        django.contrib.auth.views.logout,
+        {
+            'template_name': 'app/lay.html',
+            'extra_context':
+            {
+                'title': '登录',
+                'year': datetime.now().year,
+            }
+        },
+        name='lay'),
+
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     
