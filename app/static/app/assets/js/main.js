@@ -369,44 +369,44 @@ var Core = function(options) {
       });
 
       // 3. LEFT MENU LINKS TOGGLE
-      $('.sidebar-menu li a.accordion-toggle').click(function(e) {
+//       $('.sidebar-menu li a.accordion-toggle').click(function(e) {
+// debugger;
+//          // Any menu item with the accordion class is a dropdown submenu. Thus we prevent default actions
+//          e.preventDefault();
 
-         // Any menu item with the accordion class is a dropdown submenu. Thus we prevent default actions
-         e.preventDefault();
+//          // Any menu item with the accordion class is a dropdown submenu. Thus we prevent default actions
+//          if ($('body').hasClass('sb-l-m') && !$(this).parents('ul.sub-nav').length) {
+//             return;
+//          }
 
-         // Any menu item with the accordion class is a dropdown submenu. Thus we prevent default actions
-         if ($('body').hasClass('sb-l-m') && !$(this).parents('ul.sub-nav').length) {
-            return;
-         }
+//          // Any menu item with the accordion class is a dropdown submenu. Thus we prevent default actions
+//          if (!$(this).parents('ul.sub-nav').length) {
+//             $('a.accordion-toggle.menu-open').next('ul').slideUp('fast', 'swing', function() {
+//                $(this).attr('style', '').prev().removeClass('menu-open');
+//             });
+//          }
+//          // Any menu item with the accordion class is a dropdown submenu. Thus we prevent default actions
+//          else {
+//             var activeMenu = $(this).next('ul.sub-nav');
+//             var siblingMenu = $(this).parent().siblings('li').children('a.accordion-toggle.menu-open').next('ul.sub-nav')
 
-         // Any menu item with the accordion class is a dropdown submenu. Thus we prevent default actions
-         if (!$(this).parents('ul.sub-nav').length) {
-            $('a.accordion-toggle.menu-open').next('ul').slideUp('fast', 'swing', function() {
-               $(this).attr('style', '').prev().removeClass('menu-open');
-            });
-         }
-         // Any menu item with the accordion class is a dropdown submenu. Thus we prevent default actions
-         else {
-            var activeMenu = $(this).next('ul.sub-nav');
-            var siblingMenu = $(this).parent().siblings('li').children('a.accordion-toggle.menu-open').next('ul.sub-nav')
+//             activeMenu.slideUp('fast', 'swing', function() {
+//                $(this).attr('style', '').prev().removeClass('menu-open');
+//             });
+//             siblingMenu.slideUp('fast', 'swing', function() {
+//                $(this).attr('style', '').prev().removeClass('menu-open');
+//             });
+//          }
 
-            activeMenu.slideUp('fast', 'swing', function() {
-               $(this).attr('style', '').prev().removeClass('menu-open');
-            });
-            siblingMenu.slideUp('fast', 'swing', function() {
-               $(this).attr('style', '').prev().removeClass('menu-open');
-            });
-         }
+//          // Now we expand targeted menu item, add the ".open-menu" class
+//          // and remove any left over inline jQuery animation styles
+//          if (!$(this).hasClass('menu-open')) {
+//             $(this).next('ul').slideToggle('fast', 'swing', function() {
+//                $(this).attr('style', '').prev().toggleClass('menu-open');
+//             });
+//          }
 
-         // Now we expand targeted menu item, add the ".open-menu" class
-         // and remove any left over inline jQuery animation styles
-         if (!$(this).hasClass('menu-open')) {
-            $(this).next('ul').slideToggle('fast', 'swing', function() {
-               $(this).attr('style', '').prev().toggleClass('menu-open');
-            });
-         }
-
-      });
+//       });
    }
 
    // Tray related Functions
